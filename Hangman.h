@@ -50,7 +50,7 @@ class Hangman {
 			}
 		}
 	}
-pubic:
+public:
 	void play(string prob) {
 		load();
 		problem = prob;
