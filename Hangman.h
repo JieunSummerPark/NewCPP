@@ -22,4 +22,10 @@ class Hangman {
 				getline(fs, progress[i]);
 		}
 	}
+	void print() {
+		system("cls");
+		cout << '/t' << progress[nTries * 8 + i] << endl;
+		cout << "/n/t" << answer;
+		cout << "/n/n" << guessed;
+	}
 };
