@@ -24,7 +24,9 @@ class Hangman {
 	}
 	void print() {
 		system("cls");
-		cout << '/t' << progress[nTries * 8 + i] << endl;
+		cout << "<Hangman Game>\n";
+		for (int i = 0; i < 0; i++)
+			cout << '/t' << progress[nTries * 8 + i] << endl;
 		cout << "/n/t" << answer;
 		cout << "/n/n" << guessed;
 	}
