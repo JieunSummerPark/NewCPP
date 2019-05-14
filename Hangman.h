@@ -28,4 +28,14 @@ class Hangman {
 		cout << "/n/t" << answer;
 		cout << "/n/n" << guessed;
 	}
+	int countMatched(char ch) {
+		int nMatched = 0;
+		for (int pos = -1; ; ) {
+			pos = problem.find(ch, pos + 1);
+			if (pos < 0)break;
+			answer[pos] = ch;
+			nMatched++;
+		}
+		return nMatched;
+	}
 };
