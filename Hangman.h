@@ -50,4 +50,18 @@ class Hangman {
 			}
 		}
 	}
+pubic:
+	void play(string prob) {
+		load();
+		problem = prob;
+		answer = string(problem.length(), '-');
+		guessed = string(24, '.');
+		nTries = 0;
+		while (nTries < maxTries && answer != problem) {
+			print();
+			guess();
+		}
+		print();
+		cout << "\n\t" << ((nTries == maxTries) ? "실패" : "정답") << end;
+	}
 };
