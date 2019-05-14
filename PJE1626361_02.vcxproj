@@ -188,6 +188,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Hangman.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PJE1626361_02.h" />
     <ClInclude Include="PJE1626361_02Dlg.h" />
