@@ -38,4 +38,14 @@ class Hangman {
 		}
 		return nMatched;
 	}
+	void guess() {
+		char ch = getch();
+		if (ch >= 'a' && ch <= 'z') {
+			int pos = guessed.find(ch);
+			if (pos < 0) {
+				guessed[ch - 'a'] = ch;
+				if (countMatched(ch) == 0) nTries++;
+			}
+		}
+	}
 };
